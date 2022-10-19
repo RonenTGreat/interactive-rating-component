@@ -52,13 +52,7 @@ h6 {
   isolation: isolate;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 
 /* CSS Variables */
 
@@ -80,7 +74,8 @@ body{
   padding: 2rem;
   max-width: 20rem;
   background-color: var(--darkBlue);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+
 }
 
 .img{
@@ -130,11 +125,6 @@ p{
   cursor: pointer;
 }
 
-.btn:hover{
-  background-color: var(--mediumGrey);
-  color: var(--white);
-}
-
 .submit{
   background-color: var(--primary);
   text-transform: uppercase;
@@ -147,14 +137,57 @@ p{
   cursor: pointer;
 }
 
-.submit:hover{
-  background-color: var(--white);
-  color: var(--primary);
-}
-
 .active{
   background-color: var(--primary);
   color: var(--white);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Thank You Section */
+
+.thank-you{
+  margin: 5rem auto;
+  padding: 2rem;
+  max-width: 20rem;
+  background-color: var(--darkBlue);
+  border-radius: 1.5rem;
+}
+
+.thank-you-img{
+  margin: 1rem auto;
+}
+
+.rate-text {
+  margin: .5rem auto;
+  text-align: center;
+  color: var(--primary);
+  background-color: hsl(208, 16%, 16%);
+  border-radius: 1.5rem;
+  width: 10rem;
+  padding: .3rem;
+}
+
+.thank-you h1{
+  margin: 2rem auto  .5rem auto;
+  text-align: center;
+}
+
+.thank-you p{
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.attribution {
+  font-size: .9rem;
+  text-align: center;
+  color: var(--lightGrey);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 768px) {
@@ -176,5 +209,23 @@ p{
     width: 4rem;
     height: 4rem;
   }
+
+  .btn:hover{
+  background-color: var(--mediumGrey);
+  color: var(--white);
+}
+
+.submit:hover{
+  background-color: var(--white);
+  color: var(--primary);
+}
   
+  .thank-you {
+    max-width: 26rem;
+  }
+
+  .rate-text{
+    width: 18rem;
+    font-size: 1.5rem;
+  }
 }
